@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_iot"
+            android:icon="@drawable/logo"
+            android:title="CookBOT" />
+        <item
+            android:id="@+id/nav_create_recipe"
+            android:icon="@drawable/n_r"
+            android:title="New Recipe" />
+        <item
+            android:id="@+id/nav_recipe_list"
+            android:icon="@drawable/r_l"
+            android:title="Recipe List" />
+
+        <!--<item
+            android:id="@+id/nav_recipe_map"
+            android:icon="@drawable/logo"
+            android:title="Recipe Gradients Map" />-->
+
+    </group>
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

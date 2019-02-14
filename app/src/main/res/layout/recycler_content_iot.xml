@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_io_t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="w3engineers.com.cookerbot.activity.IoTActivity"
+    tools:showIn="@layout/activity_io_t">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header_area"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#ffad33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/logo_transparent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/device"
+                android:layout_below="@+id/header_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/buttonOn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_bot_on"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/bot_on" />
+
+                <Button
+                    android:id="@+id/buttonOff"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ripple_bot_on"
+                    android:text="@string/bot_off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/device2"
+                android:layout_below="@+id/device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/deviceOn"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_bot_on"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/waven_on" />
+
+                <Button
+                    android:id="@+id/deviceOff"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ripple_bot_on"
+                    android:text="@string/waven_off" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_below="@+id/device2"
+                    android:id="@+id/readSerialData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textSize="18dp"/>
+                <EditText
+                    android:id="@+id/apitext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="api"
+                    android:text="CHICKEN:o+18:t*160:s#1:t*6:s#2:t*6:s#3:t*6:s#9:o+2:t*60:s#7:t*600:o+20:t*900"/>
+            </LinearLayout>
+            <!--android:text="CHICKEN:o+10:t*16:s#1:t*6:s#2:t*6:s#3:t*6:s#7:o+2:t*6:s#9:t*6:o+10:t*30"/>-->
+            <!--android:text="CHICKEN:o+18:t*160:s#1:t*6:s#2:t*6:s#3:t*6:s#7:o+2:t*60:s#9:t*600:o+10:t*900"-->
+            <!--android:text="POTATO FRI:o+10:h@3:t*90:h@3:s#1:h@3:s#2:h@3:s#3:h@3:s#7:h@3:b$1:t*480"-->
+            <!--android:text="CHICKEN:o+10:h@1:s#1:h@1:t*10:h@1:s#2:h@1:s#3:h@1:s#7:h@1:s#8:b$1"-->
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/device2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <LinearLayout
+                android:id="@+id/buttonFirst"
+                android:layout_below="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/beef"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/beef"
+                    android:paddingTop="5dp"
+                    android:text="@string/beef_cook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/chicken"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/chicken"
+                    android:paddingTop="5dp"
+                    android:text="@string/chicken_cook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/rice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/rice"
+                    android:paddingTop="5dp"
+                    android:text="@string/rice_cook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/buttonFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/noodles"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/noodles"
+                    android:paddingTop="5dp"
+                    android:text="@string/noodles_cook"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/poteto"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/fish"
+                    android:paddingTop="5dp"
+                    android:text="@string/potato_fry"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/salad"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/salad"
+                    android:paddingTop="5dp"
+                    android:text="Salad"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

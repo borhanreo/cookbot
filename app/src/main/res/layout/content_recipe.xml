@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_io_t"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="w3engineers.com.cookerbot.activity.RecipeActivity"
+    tools:showIn="@layout/activity_recipe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header_area"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#ffad33"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekbar1"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/logo_transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/on"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Oven On" />
+
+                <Button
+                    android:id="@+id/off"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Oven Off" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/recipe_name"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:hint="Recipe Name" />
+                <!--<Button
+                    android:id="@+id/reset"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:text="Reset" />-->
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:background="@drawable/ripple_btn"
+                    android:text="Save" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/oil"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/oil"
+                    android:paddingTop="5dp"
+                    android:text="@string/oil"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/water"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/water"
+                    android:paddingTop="5dp"
+                    android:text="@string/water"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/onion"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/onion"
+                    android:paddingTop="5dp"
+                    android:text="@string/onion"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/chili"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/chili"
+                    android:paddingTop="5dp"
+                    android:text="@string/chili"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/salt"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/salt"
+                    android:paddingTop="5dp"
+                    android:text="@string/salt"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/mixed_spice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/spice"
+                    android:paddingTop="5dp"
+                    android:text="@string/mixed_spice"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/spud_grinding"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/spud"
+                    android:paddingTop="5dp"
+                    android:text="@string/spud_grinding"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <!--<Button
+                    android:id="@+id/timer"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/chicken"
+                    android:paddingTop="5dp"
+                    android:text="@string/timer"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />-->
+
+                <Button
+                    android:id="@+id/ch_pot_other"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/chicken"
+                    android:paddingTop="5dp"
+                    android:text="@string/other_2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/oven_heat"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/heat"
+                    android:paddingTop="5dp"
+                    android:text="@string/oven_heat"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+
+
+
+                <Button
+                    android:id="@+id/ch_pot_other_2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/chicken"
+                    android:paddingTop="5dp"
+                    android:text="@string/other_2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <!--<Button
+                    android:id="@+id/b"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3256"
+                    android:background="@drawable/haptic"
+                    android:drawableTop="@drawable/rice"
+                    android:paddingTop="5dp"
+                    android:text="B"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="0dp">
+                <EditText
+                    android:id="@+id/gradients_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"/>
+                <TextView
+                    android:id="@+id/readSerialData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekbar1" />
+
+                <TextView
+                    android:id="@+id/selected_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
